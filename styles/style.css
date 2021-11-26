@@ -29,13 +29,14 @@ html {
 .nav-1,
 .nav-2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
 }
+
 .nav-bar {
   width: 90%;
-  align-content: space-around;
+  align-content: space-around !important;
 }
 .nav-1 ul {
   display: flex;
@@ -233,4 +234,13 @@ ul {
 }
 .division p {
   padding-left: 50px;
+}
+.nav-2-2 {
+  display: none;
+}
+hr {
+  display: none;
+}
+ol {
+  display: none;
 }

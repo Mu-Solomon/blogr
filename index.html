@@ -13,9 +13,10 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/hover.css" />
+    <link rel="stylesheet" href="styles/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/menu.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -23,23 +24,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Solomon | [Blogr]</title>
 
+    <script src="hover.js"></script>
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="container" data-aos="zoom-in-up">
       <section class="nav-bar">
         <span class="nav-1">
           <h2>Blogr</h2>
-          <ul>
+          <div class="menu_container" onclick="mySecondFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <ul id="nav_list">
             <li>
               <a href="#" id="product">Product</a>
               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
@@ -66,7 +65,7 @@
             </li>
             <div id="dropdown">
               <li>
-                <a href="#">Connect</a>
+                <a href="#" onclick="myFunction()" class="dropbtn">Connect</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
                   <path
                     fill="none"
@@ -76,17 +75,29 @@
                     d="M1 1l4 4 4-4"
                   />
                 </svg>
+                <div id="connect">
+                  <ul>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                  </ul>
+                </div>
               </li>
-              <div id="connect">
-                <ul>
-                  <li>Contact</li>
-                  <li>Newsletter</li>
-                  <li>LinkedIn</li>
-                </ul>
-              </div>
+              <ol id="myDropdown" class="dropdown-content">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ol>
             </div>
+
+            <hr />
+            <span class="nav-2-2">
+              <p>Login</p>
+              <p>Sign up</p>
+            </span>
           </ul>
         </span>
+
         <span class="nav-2">
           <p>Login</p>
           <p>Sign up</p>
@@ -104,11 +115,10 @@
     <div id="container_2" data-aos="fade-right">
       <h2 class="heading">Designed for the future</h2>
       <span class="text_wrapper">
-        <p class="paragraph_head" data-aos="flip-right">Introducing an extensible editor</p>
-        <p
-          class="explanation"
-          data-aos="zoom-in-right"
-        >
+        <p class="paragraph_head" data-aos="flip-right">
+          Introducing an extensible editor
+        </p>
+        <p class="explanation" data-aos="zoom-in-right">
           Blogr features an exceedingly intuitive interface which lets you focus
           on one thing: creating content. The editor supports management of
           multiple blogs and allows easy manipulation of embeds such as images,
@@ -118,10 +128,7 @@
       </span>
       <span class="text_wrapper" data-aos="fade-up">
         <p class="paragraph_head" id="robust">Robust content management</p>
-        <p
-          class="explanation"
-          data-aos="fade-down"
-        >
+        <p class="explanation" data-aos="fade-down">
           Flexible content management enables users to easily move through
           posts. Increase the usability of your blog by adding customized
           categories, sections, format, or flow. With this functionality, you’re
@@ -129,11 +136,12 @@
         </p>
       </span>
     </div>
-  
-    <div id="container_3" data-aos="fade-left">
 
+    <div id="container_3" data-aos="fade-left">
       <span id="text_wrapper_3">
-        <h2 class="heading_3" data-aos="fade-right">State of the Art Infrastructure</h2>
+        <h2 class="heading_3" data-aos="fade-right">
+          State of the Art Infrastructure
+        </h2>
         <p class="explanation_3" data-aos="fade-up-right">
           With reliability and speed in mind, worldwide data centers provide the
           backbone for ultra-fast connectivity. This ensures your site will load
@@ -144,7 +152,9 @@
     </div>
     <div id="container_4" data-aos="fade-up" data-aos-duration="3000">
       <span class="text_wrapper">
-        <p class="paragraph_head" id="para_4" data-aos="fade-right">Free, open, simple</p>
+        <p class="paragraph_head" id="para_4" data-aos="fade-right">
+          Free, open, simple
+        </p>
         <p class="explanation" id="explanation_4">
           Blogr is a free and open source application backed by a large
           community of helpful developers. It supports features such as code
@@ -194,9 +204,7 @@
       </span>
     </div>
     <div class="attribution"></div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="hover.js"></script>
     <script>
       AOS.init();
     </script>

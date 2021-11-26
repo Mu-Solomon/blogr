@@ -36,6 +36,9 @@
     background-size: 100%;
     background-position-y: 85px;
     padding: 180px 0 180px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .paragraph_head {
     margin-top: 200px;
