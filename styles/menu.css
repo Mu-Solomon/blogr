@@ -1,4 +1,7 @@
 @media screen and (min-width: 300px) and (max-width: 600px) {
+  .container {
+  width: 89%;
+  }
   .nav-bar ul,
   .nav-1 {
     display: flex;
@@ -12,7 +15,8 @@
     padding: 30px;
     justify-content: center;
     align-items: center;
-    margin-top: 500px;
+    text-align: center;
+    top: 70px;
     margin-left: -15%;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgb(92, 89, 89);
@@ -35,6 +39,7 @@
     width: 100px;
     height: 20px;
     padding: 15px;
+    margin: auto;
     text-align: center;
   }
   hr {
@@ -67,7 +72,7 @@
     background: #efeff1;
     padding: 30px;
     width: 80%;
-    text-align: center;
+    text-align: center !important;
     border-radius: 5px;
     display: none;
   }
@@ -75,7 +80,7 @@
     list-style-type: none;
     color: #6a7786;
     margin: -10px;
-    text-align: center;
+    text-align: center !important;
   }
   ol li:hover {
     color: #494d52;
@@ -129,4 +134,7 @@
   #nav_list {
     display: none;
   }
+  #dropdown:hover #connect {
+    display: none;
+    }
 }
