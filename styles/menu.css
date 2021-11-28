@@ -1,6 +1,6 @@
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .container {
-  width: 89%;
+    width: 90%;
   }
   .nav-bar ul,
   .nav-1 {
@@ -12,13 +12,15 @@
     position: absolute;
     background: white;
     width: 270px;
-    padding: 30px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
     top: 70px;
-    margin-left: -15%;
+    left: 7%;
+    right: 8%;
     border-radius: 5px;
+    margin: auto;
     box-shadow: 2px 2px 10px rgb(92, 89, 89);
   }
   .nav-1 a {
@@ -105,7 +107,7 @@
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 50px;
   }
 
@@ -115,7 +117,7 @@
     width: 35px;
     height: 5px;
     background-color: #fff;
-    
+
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -124,9 +126,11 @@
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
   }
-  
-  .change .bar2 {opacity: 0;}
-  
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
@@ -136,5 +140,5 @@
   }
   #dropdown:hover #connect {
     display: none;
-    }
+  }
 }
